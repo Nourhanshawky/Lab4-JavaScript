@@ -1,9 +1,9 @@
 ///////constructor function////////////
-function Person(pfullname ,pmoney ,psleepMood,pHealthRate){
-    this.fullname = pfullname;
-    this.money = pmoney;
-    this.sleepMood = psleepMood;
-    this.healthRate = pHealthRate;
+function Person(fullname ,money ,sleepMood,HealthRate){
+    this.fullname = fullname;
+    this.money = money;
+    this.sleepMood = sleepMood;
+    this.healthRate = HealthRate;
 }
 Person.prototype.Sleep =function(hours){
     if(hours == 7) 
@@ -45,11 +45,11 @@ console.log(person1);
 
 ///////////////classes////////////
 class Person2{
-constractor(pfullname ,pmoney ,psleepMood,pHealthRate){
-    this.fullname = pfullname;
-    this.money = pmoney;
-    this.sleepMood = psleepMood;
-    this.healthRate = pHealthRate;
+constractor(fullname ,money ,sleepMood,HealthRate){
+    this.fullname = fullname;
+    this.money = money;
+    this.sleepMood = sleepMood;
+    this.healthRate = HealthRate;
 }
 Sleep(hours){
     if(hours == 7) 
@@ -92,11 +92,11 @@ console.log(person2);
 
 ////////////////////Objects Linking to Other Objects//////////////
 const Person3 ={
-    init(pfullname ,pmoney ,psleepMood,pHealthRate){
-        this.fullname = pfullname;
-        this.money = pmoney;
-        this.sleepMood = psleepMood;
-        this.healthRate = pHealthRate;
+    init(fullname ,money ,sleepMood,HealthRate){
+        this.fullname = fullname;
+        this.money = money;
+        this.sleepMood = sleepMood;
+        this.healthRate = HealthRate;
     return this;
     },
 
@@ -139,12 +139,12 @@ person3.Buy(3);
 console.log(person3);
 
 //////////////Factory Functions///////////////
-function Person4(pfullname ,pmoney ,psleepMood,pHealthRate) {
+function Person4(fullname ,money ,sleepMood,HealthRate) {
     return {
-      pfullname,
-      pmoney,
-      psleepMood,
-      pHealthRate,
+      fullname,
+      money,
+      sleepMood,
+      HealthRate,
   
       Sleep(hours){
         if(hours == 7) 
@@ -182,7 +182,7 @@ function Person4(pfullname ,pmoney ,psleepMood,pHealthRate) {
   
   
   const person4 = Person4("Nourhan shawky", 10, "happy", 90);
-  person4.Sleep(8);
+  person4.Sleep(4);
   person4.Eat(2);
   person4.Buy(3);
   console.log(person4)
