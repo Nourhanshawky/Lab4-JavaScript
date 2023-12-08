@@ -181,7 +181,7 @@ function Person4(pfullname ,pmoney ,psleepMood,pHealthRate) {
   }
   
   
-  const person4 = Person4("Nourhan shawky", 10, "happy", 90);
+  const person4 = Person4("Nourhan shawky", 300, "happy", 90);
   person4.Sleep(8);
   person4.Eat(2);
   person4.Buy(3);
